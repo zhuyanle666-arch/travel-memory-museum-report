@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A competitive landscape and MVP strategy report for Travel Memory Museum, an app that turns physical travel souvenirs into shareable digital exhibitions.">
+  <meta property="og:title" content="Travel Memory Museum · Competitive Landscape">
+  <meta property="og:description" content="Turning physical travel souvenirs into curated, shareable digital exhibitions.">
+  <meta property="og:type" content="website">
+  <title>Travel Memory Museum · Competitive Landscape</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4" defer></script>
+  <script src="./charts.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Competitive landscape · MVP v1.0</p>
+    <h1>Travel souvenirs<br>deserve more than a drawer.</h1>
+    <p class="lede">The opportunity for Travel Memory Museum is not to build another travel journal or a smaller 3D scanner. It can occupy a clearer position: turning physical souvenirs into digital objects that people can collect, curate, narrate, and share.</p>
+    <p class="meta">Research set: Polarsteps, FindPenguins, Polycam, and Milanote · Official public sources · June 20, 2026</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Executive summary</h2>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="metric">0</div>
+          <div class="metric-label">Mature products in this research set that combine travel context, physical souvenirs, 3D, and curated sharing</div>
+        </div>
+        <div class="card">
+          <div class="metric">4</div>
+          <div class="metric-label">Existing substitute categories: travel tracking, travel communities, 3D scanning, and visual moodboards</div>
+        </div>
+        <div class="card">
+          <div class="metric">1</div>
+          <div class="metric-label">Core promise to prove: one guided capture creates a souvenir worth collecting and sharing</div>
+        </div>
+        <div class="card">
+          <div class="metric">2</div>
+          <div class="metric-label">Product loops: capture → generate → collect; curate → publish → view</div>
+        </div>
+      </div>
+      <div class="callout">
+        <strong>Strategic view</strong>
+        This is an opportunity for cross-category innovation, but users will compare each part of the experience with a mature specialist. The MVP does not have to beat every specialist on every feature. It has to make the handoffs feel effortless—especially capture guidance, trust during processing, failure recovery, and faithful public rendering.
+      </div>
+    </section>
+
+    <section>
+      <h2>1. The competitive set is not a straight line</h2>
+      <p class="section-intro">These four products do not all look like Travel Memory Museum. They matter because each one owns a critical part of the user's current workflow, making them more useful for product decisions than a narrow list of direct lookalikes.</p>
+      <div class="grid grid-2" style="margin-top:28px">
+        <div class="card">
+          <h3>Polarsteps</h3>
+          <p class="product"><b>User job:</b> automatically track a route, add photos and stories, share a trip, and turn it into a physical travel book.</p>
+          <p class="product"><b>Competitive pressure:</b> the established default for travel memory capture and sharing.</p>
+        </div>
+        <div class="card">
+          <h3>FindPenguins</h3>
+          <p class="product"><b>User job:</b> track travel offline, publish a travel journal, discover other trips, and create travel books or 3D route flyover videos.</p>
+          <p class="product"><b>Competitive pressure:</b> free, low-friction travel logging with community content.</p>
+        </div>
+        <div class="card">
+          <h3>Polycam</h3>
+          <p class="product"><b>User job:</b> capture reality with photogrammetry, LiDAR, or AI, then generate and share 3D models.</p>
+          <p class="product"><b>Competitive pressure:</b> 3D capture quality, professional depth, export options, and cross-platform reach.</p>
+        </div>
+        <div class="card">
+          <h3>Milanote</h3>
+          <p class="product"><b>User job:</b> arrange images, text, video, and files on a free-form board, then share it through a read-only link that requires no account.</p>
+          <p class="product"><b>Competitive pressure:</b> mature expectations for moodboard freedom, templates, and collaboration.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Public adoption signal</th><th>Primary business model</th><th>Comparability note</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Polarsteps</td><td>20M+ travelers</td><td>Free app + physical products such as Travel Books</td><td>A user signal, not market share</td></tr>
+            <tr><td>FindPenguins</td><td>Millions of travelers; 10M+ travel experiences</td><td>Free app + Premium + Photo Books</td><td>User and content counts use different units</td></tr>
+            <tr><td>Polycam</td><td>No comparable user figure disclosed on the official pages reviewed</td><td>Limited free use + subscription plans</td><td>A professional 3D category with a different user job</td></tr>
+            <tr><td>Milanote</td><td>No comparable user figure disclosed on the official pages reviewed</td><td>100 free notes/images/links + unlimited Professional plan</td><td>A creative tool with a different usage pattern</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-note">No consistent, auditable market-share dataset was found, so this report deliberately avoids a market-share pie chart. Combining registered users, downloads, and content counts would create a misleading comparison.</p>
+    </section>
+
+    <section>
+      <h2>2. The whitespace is in the end-to-end combination</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Critical capability</th><th>Travel Museum</th><th>Polarsteps</th><th>FindPenguins</th><th>Polycam</th><th>Milanote</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Travel context and place-based stories</td><td class="yes">Core</td><td class="yes">Strong</td><td class="yes">Strong</td><td class="no">Weak</td><td class="partial">Generic</td></tr>
+            <tr><td>Purpose-built souvenir records</td><td class="yes">Core</td><td class="no">None</td><td class="no">None</td><td class="partial">Any object can be scanned</td><td class="partial">Images can be uploaded</td></tr>
+            <tr><td>Multi-image object-to-3D</td><td class="yes">Core</td><td class="no">None</td><td class="no">3D route video only</td><td class="yes">Strong</td><td class="no">None</td></tr>
+            <tr><td>Emotion and personal meaning</td><td class="yes">Native</td><td class="partial">Stories</td><td class="partial">Stories</td><td class="no">None</td><td class="partial">Free text</td></tr>
+            <tr><td>Collection browsing, search, and filters</td><td class="yes">Native</td><td class="partial">Trip-based</td><td class="partial">Trip-based</td><td class="partial">3D captures</td><td class="yes">Boards</td></tr>
+            <tr><td>Free-form curation canvas</td><td class="yes">MVP</td><td class="no">None</td><td class="no">None</td><td class="no">None</td><td class="yes">Strong</td></tr>
+            <tr><td>Public link with no login</td><td class="yes">MVP</td><td class="yes">Trip sharing</td><td class="yes">Trip sharing</td><td class="yes">Model sharing</td><td class="yes">Read-only links</td></tr>
+            <tr><td>Souvenir → digital exhibition workflow</td><td class="yes">The product's spine</td><td class="no">None</td><td class="no">None</td><td class="partial">Stops at the model</td><td class="partial">Requires manual assembly</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-wrap"><canvas id="radar"></canvas></div>
+        <p class="chart-note">Scores from 0–100 are analytical judgments based on publicly described feature coverage. They are not measures of objective quality, satisfaction, or market share. Travel Museum represents the PRD target state, not a shipped product.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Positioning: connect two separate worlds</h2>
+      <p class="section-intro">Travel products sit in the high-context, low-object-immersion corner. 3D scanners sit in the high-object-immersion, low-travel-context corner. Travel Memory Museum becomes distinctive by connecting both ends in one journey.</p>
+      <div class="chart-card">
+        <div class="chart-wrap"><canvas id="positioning"></canvas></div>
+        <p class="chart-note">Both axes are analytical scores. Bubble size represents workflow breadth, not market size.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. What to learn from each competitor</h2>
+      <div class="profile">
+        <div><div class="label">Polarsteps</div><h3>Learn automation and replay</h3></div>
+        <p><b>Worth borrowing:</b> automatic tracking, offline operation, low battery use, travel statistics, shareable video, and physical books. It hides the burden of capture while making the value of looking back highly visible.</p>
+        <p><b>Space it leaves open:</b> content is organized around trips and routes—not physical keepsakes, 3D objects, or curated exhibitions. Our home screen should feel like “your object museum,” not a route planner.</p>
+      </div>
+      <div class="profile">
+        <div><div class="label">FindPenguins</div><h3>Learn free sharing and content loops</h3></div>
+        <p><b>Worth borrowing:</b> offline tracking, photo stories, friend sharing, travel books, and lightweight delight through 3D route flyover videos. Public stories also create a discovery and inspiration loop.</p>
+        <p><b>Space it leaves open:</b> its 3D is an expression of the route, not a digitization of physical souvenirs. Travel Museum can use public moodboards as a sharing loop without copying a travel community in the MVP.</p>
+      </div>
+      <div class="profile">
+        <div><div class="label">Polycam</div><h3>Learn confidence and result quality</h3></div>
+        <p><b>Worth borrowing:</b> object, space, and photogrammetry capture; directly shareable models; a limited free tier; and paid value created through higher image limits and unlimited capture.</p>
+        <p><b>Space it leaves open:</b> its public positioning is professional reality capture. Travel Museum should hide file formats and technical language, translating guidance into: “help your souvenir look like itself.”</p>
+      </div>
+      <div class="profile">
+        <div><div class="label">Milanote</div><h3>Learn controlled freedom</h3></div>
+        <p><b>Worth borrowing:</b> flexible layout, rich content types, templates, private-by-default boards, granular permissions, and no-sign-up read-only links. It sets a mature expectation for digital moodboards.</p>
+        <p><b>Space it leaves open:</b> a generic tool asks users to find assets and create meaning themselves. Travel Museum already has the object, place, story, emotion, and 3D model—so fewer tools can produce a more meaningful result.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Five forces: real opportunity, powerful substitutes</h2>
+      <div class="grid grid-2">
+        <div class="chart-card flush">
+          <div class="chart-wrap compact"><canvas id="porter"></canvas></div>
+        </div>
+        <div>
+          <div class="priority"><b>Substitutes 5/5</b><span>Users can keep using Photos, a travel journal, a 3D scanner, or a generic moodboard—or simply install nothing new.</span></div>
+          <div class="priority"><b>Buyer power 4/5</b><span>Consumer app switching costs are low and subscription sensitivity is high. Value must appear with the first souvenir.</span></div>
+          <div class="priority"><b>Supplier power 4/5</b><span>The core experience depends on Tripo3D, Firebase, and the App Store. Cost, quotas, latency, or policy changes directly affect the product.</span></div>
+          <div class="priority"><b>New entrants 3/5</b><span>Assembling features is not hard; making capture quality, asynchronous generation, cross-platform 3D, and faithful layout work reliably requires meaningful engineering.</span></div>
+          <div class="priority"><b>Rivalry 3/5</b><span>Direct rivals are scarce, but all four neighboring categories are mature. The real competition is the user's existing habit.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Blue Ocean actions: do less to become more distinct</h2>
+      <div class="grid grid-2">
+        <div class="errc">
+          <div class="verb">ELIMINATE</div>
+          <ul>
+            <li>Automatic route tracking and trip planning</li>
+            <li>Professional 3D export formats and measurement terminology</li>
+            <li>A public content feed and follower graph</li>
+          </ul>
+        </div>
+        <div class="errc">
+          <div class="verb">REDUCE</div>
+          <ul>
+            <li>Infinite-canvas complexity and advanced design controls</li>
+            <li>Field count and first-record effort</li>
+            <li>Technical details users must understand about generation</li>
+          </ul>
+        </div>
+        <div class="errc">
+          <div class="verb">RAISE</div>
+          <ul>
+            <li>Multi-angle guidance and trust in the result</li>
+            <li>The narrative role of place, story, date, and emotion</li>
+            <li>Private defaults, publishing consent, and revocation</li>
+          </ul>
+        </div>
+        <div class="errc">
+          <div class="verb">CREATE</div>
+          <ul>
+            <li>A physical souvenir → 3D collection → digital exhibition workflow</li>
+            <li>Moodboard cards that open into interactive 3D stories</li>
+            <li>Travel memories organized by meaning rather than route</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Direct implications for the MVP</h2>
+      <div class="recommendations">
+        <div class="priority">
+          <b>Keep</b>
+          <span>Guided 3–4 image capture, asynchronous generation states, resumable jobs, 3D preview, item stories, collection browsing, moodboard publishing, and a no-login web viewer.</span>
+        </div>
+        <div class="priority">
+          <b>Add</b>
+          <span>A server-side Tripo3D proxy and idempotency, photo-only drafts after failure, public snapshots, unpublishing, GLB cache and memory protection, EXIF cleanup, account deletion, and funnel analytics.</span>
+        </div>
+        <div class="priority">
+          <b>Simplify</b>
+          <span>Use a fixed logical canvas with 2–3 templates. Keep drag, resize, text, and background colors; skip infinite canvas, rotation, custom fonts, textures, and collaboration.</span>
+        </div>
+        <div class="priority">
+          <b>Defer</b>
+          <span>If Sprint 5 is overloaded, move extra photo elements to v1.1. Keep multiple collections, community discovery, maps, AR, video/audio, and AI tagging in Phase 2.</span>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>PRD gap or contradiction</th><th>Impact</th><th>Recommended decision</th></tr></thead>
+          <tbody>
+            <tr><td>Home includes “My Collections,” but no collections data model exists</td><td>Navigation, queries, and deletion rules may be reworked</td><td>Use one default collection for the MVP</td></tr>
+            <tr><td>Item types include Bottle, but filters do not</td><td>UI and filter logic disagree</td><td>Keep Bottle as a type and group it under Other for filtering</td></tr>
+            <tr><td>ProfileScreen exists in the architecture but has no specification</td><td>Display name, logout, and account deletion have no home</td><td>Ship a minimal Profile/Settings screen</td></tr>
+            <tr><td>The Tripo3D section lists an endpoint but no async or secret architecture</td><td>Secret exposure, duplicate charges, and lost jobs after refresh</td><td>Use a server-side jobs state machine, idempotency, and quota controls</td></tr>
+            <tr><td>Moodboard elements lack schema versioning, layering, and boundary rules</td><td>App/web layout drift and difficult migrations</td><td>Use a fixed canvas, normalized coordinates, element limits, and public snapshots</td></tr>
+            <tr><td>Public sharing only defines shareUrl and isPublished</td><td>Guessable URLs or private-field leakage</td><td>Use a high-entropy public ID, minimal public document, and unpublishing</td></tr>
+            <tr><td>No model-size, cache, or minimum-device budget</td><td>3D screens may crash on older phones</td><td>Freeze the budget after a real-device Sprint 0 spike</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Recommended validation plan and success metrics</h2>
+      <div class="grid grid-2">
+        <div class="card warm">
+          <h3>Before building the full editor</h3>
+          <p class="small">Recruit 5–8 people who keep tickets, postcards, magnets, or small travel objects. Ask them to bring real items, complete guided capture, and observe whether they are willing to wait, retake images, and share the outcome.</p>
+        </div>
+        <div class="card warm">
+          <h3>Validate curation with a concierge prototype</h3>
+          <p class="small">Use 2–3 fixed exhibition templates to test whether a “digital exhibition” feels more share-worthy than a normal photo album. Expand layout freedom only after users repeatedly ask for it.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Funnel stage</th><th>Suggested event</th><th>Initial decision threshold</th></tr></thead>
+          <tbody>
+            <tr><td>Activation</td><td>capture_started → photos_ready</td><td>At least 70% of starters complete three usable photos</td></tr>
+            <tr><td>Core result</td><td>generation_started → model_saved</td><td>At least 85% real-object success; P95 duration within the validated patience window</td></tr>
+            <tr><td>Collection value</td><td>second_item_saved_7d</td><td>A meaningful share of first-model users adds a second item within seven days</td></tr>
+            <tr><td>Curation value</td><td>moodboard_created → published</td><td>At least 50% of moodboard creators publish one</td></tr>
+            <tr><td>Sharing loop</td><td>share_copied → public_opened</td><td>At least 40% of copied links receive one visitor open</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-note">These thresholds are MVP hypotheses, not industry benchmarks. Recalibrate them after the first 20–50 test users.</p>
+    </section>
+
+    <section>
+      <h2>9. Sources and method</h2>
+      <p class="section-intro">Only official public competitor pages were used to verify features and business models. When no consistent comparison was available, the report says “not disclosed” rather than presenting an analytical score as fact.</p>
+      <ol class="source-list">
+        <li><a href="https://www.polarsteps.com/">Polarsteps official website</a>: planning, automatic route tracking, offline use, sharing, statistics, video, and Travel Books; the site states 20M+ travelers.</li>
+        <li><a href="https://www.findpenguins.com/">FindPenguins official website</a>: offline travel tracking, journals, Photo Books, 3D flyover videos, and public travel content; the site states millions of travelers and 10M+ travel experiences.</li>
+        <li><a href="https://findpenguins.com/premium">FindPenguins Premium</a>: Premium membership entry point.</li>
+        <li><a href="https://poly.cam/">Polycam official website</a>: photogrammetry, LiDAR/AI reality capture, object and space models, sharing, and collaboration.</li>
+        <li><a href="https://poly.cam/pricing">Polycam pricing</a>: free and subscription structure, capture limits, image limits, exports, and sharing.</li>
+        <li><a href="https://milanote.com/product/moodboarding">Milanote Moodboarding</a>: free-form layout, templates, multimedia, permissions, and no-sign-up read-only links.</li>
+        <li><a href="https://milanote.com/plans">Milanote plans</a>: 100 free notes/images/links and unlimited content on Professional.</li>
+        <li>Travel Memory Museum PRD v1.0 (provided by the user, June 2026): product scope, screens, data model, and Phase 2 roadmap.</li>
+      </ol>
+      <p class="small">Accessed June 20, 2026. Public claims and plan details can change; verify them again before fundraising, pricing, or formal market-sizing decisions.</p>
+    </section>
+  </main>
+
+  <footer>
+    Travel Memory Museum · Competitive Landscape · Prepared from PRD v1.0 and official public sources
+  </footer>
+</body>
+</html>
