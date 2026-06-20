@@ -1,0 +1,30 @@
+window.WEEK1_BACKLOG = {
+  source: "Travel_Memory_Museum_Week1_Discovery_Backlog.xlsx",
+  syncedOn: "2026-06-20",
+  summary: { tasks: 23, hours: 67.5, must: 20, openDecisions: 6 },
+  tasks: [
+    { id:"W1-01", day:"Day 1", workstream:"Product strategy", priority:"Must", task:"Rewrite the product hypothesis and one-line value proposition", output:"Product thesis v2", owner:"Product", hours:2, status:"Not Started" },
+    { id:"W1-02", day:"Day 1", workstream:"Product strategy", priority:"Must", task:"Define photo stylization's role in the core journey", output:"Feature role statement", owner:"Product + Design", hours:2, status:"Not Started" },
+    { id:"W1-03", day:"Day 1", workstream:"Competitive research", priority:"Must", task:"Expand the competitor research map", output:"Competitor research scope", owner:"Research", hours:2, status:"Not Started" },
+    { id:"W1-04", day:"Day 1", workstream:"Product strategy", priority:"Must", task:"Review PRD gaps and open decisions", output:"PRD change log draft", owner:"Product + Backend", hours:2, status:"Not Started" },
+    { id:"W1-05", day:"Day 1", workstream:"Measurement & decisions", priority:"Must", task:"Define Week 1 success criteria and Friday decision gates", output:"Decision gate checklist", owner:"Product", hours:1.5, status:"Not Started" },
+    { id:"W1-06", day:"Day 2", workstream:"Competitive research", priority:"Must", task:"Update the travel-memory competitor comparison", output:"Travel-memory comparison", owner:"Research", hours:4, status:"Not Started" },
+    { id:"W1-07", day:"Day 2", workstream:"Competitive research", priority:"Should", task:"Add a 3D-capture competitor comparison", output:"3D-capture comparison", owner:"Research + Backend", hours:3, status:"Not Started" },
+    { id:"W1-08", day:"Day 2", workstream:"Competitive research", priority:"Must", task:"Deep-dive photo-stylization competitors", output:"Stylization comparison matrix", owner:"Research + Design", hours:5, status:"Not Started" },
+    { id:"W1-09", day:"Day 2", workstream:"Competitive research", priority:"Should", task:"Supplement moodboard and creative-canvas research", output:"Curation comparison", owner:"Research + Design", hours:3, status:"Not Started" },
+    { id:"W1-10", day:"Day 2", workstream:"Competitive research", priority:"Must", task:"Produce an opportunity map and anti-feature list", output:"Opportunity map v2", owner:"Product + Research", hours:3, status:"Not Started" },
+    { id:"W1-11", day:"Day 3", workstream:"API selection", priority:"Must", task:"Build a multimodal image API candidate list", output:"API shortlist", owner:"Backend", hours:4, status:"Not Started" },
+    { id:"W1-12", day:"Day 3", workstream:"Privacy & safety", priority:"Must", task:"Compare API data use, retention, and commercial rights", output:"Privacy and rights matrix", owner:"Backend + Product", hours:3, status:"Not Started" },
+    { id:"W1-13", day:"Day 3", workstream:"Evaluation design", priority:"Must", task:"Define a 20-photo evaluation set", output:"20-photo dataset plan", owner:"Design + QA", hours:3, status:"Not Started" },
+    { id:"W1-14", day:"Day 3", workstream:"Evaluation design", priority:"Must", task:"Define the stylization quality rubric", output:"Evaluation rubric", owner:"Product + Design + QA", hours:3, status:"Not Started" },
+    { id:"W1-15", day:"Day 3", workstream:"API selection", priority:"Must", task:"Design the Week 2 technical-spike protocol and budget cap", output:"Spike protocol", owner:"Backend + QA", hours:3, status:"Not Started" },
+    { id:"W1-16", day:"Day 4", workstream:"Experience design", priority:"Must", task:"Propose six launch-style hypotheses", output:"Style preset hypotheses", owner:"Design", hours:4, status:"Not Started" },
+    { id:"W1-17", day:"Day 4", workstream:"Experience design", priority:"Must", task:"Draw the low-fidelity stylization flow", output:"Low-fi flow storyboard", owner:"Design", hours:4, status:"Not Started" },
+    { id:"W1-18", day:"Day 4", workstream:"User research", priority:"Must", task:"Prepare the concept interview and test script", output:"Interview guide + recruit list", owner:"Research", hours:3, status:"Not Started" },
+    { id:"W1-19", day:"Day 4", workstream:"User research", priority:"Should", task:"Complete three rapid concept interviews", output:"Interview notes", owner:"Research + Product", hours:4.5, status:"Not Started" },
+    { id:"W1-20", day:"Day 5", workstream:"Synthesis", priority:"Must", task:"Combine competitor, interview, and API desk research", output:"Evidence synthesis", owner:"Product + Research", hours:3, status:"Not Started" },
+    { id:"W1-21", day:"Day 5", workstream:"Measurement & decisions", priority:"Must", task:"Run the Friday decision workshop", output:"Signed decision log", owner:"Product + Team", hours:1.5, status:"Not Started" },
+    { id:"W1-22", day:"Day 5", workstream:"Product strategy", priority:"Must", task:"Update PRD hypotheses and open questions", output:"PRD change list v2", owner:"Product", hours:2, status:"Not Started" },
+    { id:"W1-23", day:"Day 5", workstream:"Planning", priority:"Must", task:"Generate the Week 2 technical-spike backlog", output:"Week 2 spike backlog", owner:"Product + Backend + QA", hours:2, status:"Not Started" }
+  ]
+};

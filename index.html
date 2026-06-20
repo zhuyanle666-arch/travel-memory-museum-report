@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4" defer></script>
   <script src="./charts.js" defer></script>
+  <script src="./week1-backlog-data.js" defer></script>
+  <script src="./backlog.js" defer></script>
 </head>
 <body>
   <header>
@@ -87,6 +89,38 @@
         </table>
       </div>
       <p class="chart-note">No consistent, auditable market-share dataset was found, so this report deliberately avoids a market-share pie chart. Combining registered users, downloads, and content counts would create a misleading comparison.</p>
+    </section>
+
+    <section id="official-evidence">
+      <p class="eyebrow">Product evidence</p>
+      <h2>Official interfaces, not imagined feature lists</h2>
+      <p class="section-intro">These public visuals show how the closest substitutes frame their value in the product itself. They are evidence of positioning and interaction patterns—not evidence of user satisfaction or comparative quality.</p>
+      <div class="evidence-grid">
+        <figure class="evidence-card">
+          <div class="evidence-media"><img src="./assets/official/polarsteps-official.jpg" alt="Polarsteps official homepage showing a travel route, photos, and the plan, track, relive proposition" loading="lazy"></div>
+          <figcaption>
+            <div class="evidence-title"><span>Polarsteps</span><a href="https://www.polarsteps.com/">Official site ↗</a></div>
+            <p>The route map, photo moments, and “plan, track, relive” framing make effortless capture and later replay the product's visible promise.</p>
+            <small>Official public homepage · accessed June 20, 2026</small>
+          </figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <div class="evidence-media"><img src="./assets/official/findpenguins-official.jpg" alt="FindPenguins official product image showing a mapped journey with photo points and travel book output" loading="lazy"></div>
+          <figcaption>
+            <div class="evidence-title"><span>FindPenguins</span><a href="https://www.findpenguins.com/">Official site ↗</a></div>
+            <p>Mapped photo moments and the Photo Book output show a complete memory loop: capture, publish, revisit, and turn the trip into a keepsake.</p>
+            <small>Official public product visual · accessed June 20, 2026</small>
+          </figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <div class="evidence-media"><img src="./assets/official/polycam-object-capture-official.png" alt="Polycam official Object Capture interface showing a generated 3D object and editing tools" loading="lazy"></div>
+          <figcaption>
+            <div class="evidence-title"><span>Polycam</span><a href="https://poly.cam/tools/object-capture">Official site ↗</a></div>
+            <p>The object result, annotations, and sharing controls reveal the quality bar users may already expect once a physical souvenir becomes an interactive 3D asset.</p>
+            <small>Official Object Capture page · accessed June 20, 2026</small>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <section>
@@ -268,14 +302,42 @@
       <p class="chart-note">These thresholds are MVP hypotheses, not industry benchmarks. Recalibrate them after the first 20–50 test users.</p>
     </section>
 
+    <section id="week1-backlog">
+      <p class="eyebrow">Execution plan</p>
+      <h2>9. Week 1 Discovery Backlog</h2>
+      <p class="section-intro">A preparation-only week covering competitor research, product framing, multimodal image API desk research, evaluation design, and Friday decision gates. No production API integration or customer-photo upload is included.</p>
+      <div class="backlog-summary" aria-label="Backlog summary">
+        <div class="backlog-stat"><strong id="backlog-task-count">23</strong><span>tasks</span></div>
+        <div class="backlog-stat"><strong id="backlog-hour-count">67.5</strong><span>team hours</span></div>
+        <div class="backlog-stat"><strong id="backlog-must-count">20</strong><span>Must items</span></div>
+        <div class="backlog-stat"><strong id="backlog-decision-count">6</strong><span>Friday decisions</span></div>
+      </div>
+      <div class="backlog-toolbar" aria-label="Backlog filters">
+        <label>Day<select id="backlog-day"><option value="">All days</option></select></label>
+        <label>Workstream<select id="backlog-workstream"><option value="">All workstreams</option></select></label>
+        <label>Priority<select id="backlog-priority"><option value="">All priorities</option></select></label>
+        <label class="backlog-search">Search<input id="backlog-search" type="search" placeholder="Task, output, owner…"></label>
+        <a class="download-button" href="./Travel_Memory_Museum_Week1_Discovery_Backlog.xlsx" download>Download Excel backlog</a>
+      </div>
+      <p class="backlog-result" id="backlog-result" aria-live="polite">Showing all 23 tasks</p>
+      <div class="table-wrap backlog-table-wrap">
+        <table class="backlog-table">
+          <thead><tr><th>ID</th><th>Day</th><th>Workstream</th><th>Priority</th><th>Task</th><th>Expected output</th><th>Owner</th><th>Hours</th><th>Status</th></tr></thead>
+          <tbody id="backlog-body"></tbody>
+        </table>
+      </div>
+      <p class="chart-note">The downloadable workbook also includes a dashboard, competitor scope, API scorecard, style evaluation plan, and six decision gates. The workbook is the editable source of truth; this page is its English web view.</p>
+    </section>
+
     <section>
-      <h2>9. Sources and method</h2>
+      <h2>10. Sources and method</h2>
       <p class="section-intro">Only official public competitor pages were used to verify features and business models. When no consistent comparison was available, the report says “not disclosed” rather than presenting an analytical score as fact.</p>
       <ol class="source-list">
         <li><a href="https://www.polarsteps.com/">Polarsteps official website</a>: planning, automatic route tracking, offline use, sharing, statistics, video, and Travel Books; the site states 20M+ travelers.</li>
         <li><a href="https://www.findpenguins.com/">FindPenguins official website</a>: offline travel tracking, journals, Photo Books, 3D flyover videos, and public travel content; the site states millions of travelers and 10M+ travel experiences.</li>
         <li><a href="https://findpenguins.com/premium">FindPenguins Premium</a>: Premium membership entry point.</li>
         <li><a href="https://poly.cam/">Polycam official website</a>: photogrammetry, LiDAR/AI reality capture, object and space models, sharing, and collaboration.</li>
+        <li><a href="https://poly.cam/tools/object-capture">Polycam Object Capture</a>: the official interface visual reproduced above.</li>
         <li><a href="https://poly.cam/pricing">Polycam pricing</a>: free and subscription structure, capture limits, image limits, exports, and sharing.</li>
         <li><a href="https://milanote.com/product/moodboarding">Milanote Moodboarding</a>: free-form layout, templates, multimedia, permissions, and no-sign-up read-only links.</li>
         <li><a href="https://milanote.com/plans">Milanote plans</a>: 100 free notes/images/links and unlimited content on Professional.</li>
