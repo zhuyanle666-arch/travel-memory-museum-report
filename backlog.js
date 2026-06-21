@@ -11,6 +11,11 @@
   };
   const result = document.querySelector("#backlog-result");
 
+  document.querySelector("#backlog-task-count").textContent = data.summary.tasks;
+  document.querySelector("#backlog-hour-count").textContent = data.summary.hours;
+  document.querySelector("#backlog-must-count").textContent = data.summary.must;
+  document.querySelector("#backlog-decision-count").textContent = data.summary.openDecisions;
+
   const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
   })[character]);
